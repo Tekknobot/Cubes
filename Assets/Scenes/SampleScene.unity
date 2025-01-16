@@ -321,7 +321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d424d960350b34e90bbc97da7260e4bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 8
+  radius: 11
   speed: 0
   mouseSensitivity: 5
   verticalClamp: 85
