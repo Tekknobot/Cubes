@@ -51,7 +51,7 @@ public class ColorSchemeSwitcher : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out RaycastHit hit))
         {
-            if (hit.collider.CompareTag("Cube"))
+            if (!hit.collider.CompareTag("Cube"))
             {
                 Debug.Log("Double-clicked a Cube! Nothing happens...");
             }

@@ -78,6 +78,23 @@ public class RubiksCubeController : MonoBehaviour
         }
     }
 
+    public void OnDoubleClick(string faceName)
+    {
+        RubiksCubeController controller = FindObjectOfType<RubiksCubeController>();
+        if (controller != null)
+        {
+            switch (faceName)
+            {
+                case "Top": controller.RotateTopCounterClockwise(); break;
+                case "Bottom": controller.RotateBottomCounterClockwise(); break;
+                case "Front": controller.RotateFrontCounterClockwise(); break;
+                case "Back": controller.RotateBackCounterClockwise(); break;
+                case "Left": controller.RotateLeftCounterClockwise(); break;
+                case "Right": controller.RotateRightCounterClockwise(); break;
+            }
+        }
+    }
+
 
     public void RotateTopClockwise()
     {
